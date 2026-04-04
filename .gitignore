@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Cookie Cutter Ignore
+CookieCutter and Github Learnings
+
 # C extensions
 *.so
 
