@@ -10,6 +10,7 @@ CookieCutter and Github Learnings
 *.so
 
 # Distribution / packaging
+
 .Python
 build/
 develop-eggs/
