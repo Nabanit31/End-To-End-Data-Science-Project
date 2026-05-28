@@ -5,6 +5,10 @@ from urllib.parse import urlparse
 import mlflow  # type: ignore[import]
 import mlflow.sklearn  # type: ignore[import]
 import numpy as np
+
+import dagshub
+import mlflow
+
 from sklearn.metrics import mean_squared_error,mean_absolute_error
 from catboost import CatBoostRegressor
 from sklearn.ensemble import (
@@ -117,9 +121,8 @@ class ModelTrainer:
 
             best_params = params[actual_model]
 
-            mlflow.set_registry_uri("https://dagshub.com/krishnaik06/mlprojecthindi.mlflow")
+            dagshub.init(repo_owner='Nabanit31', repo_name='End-To-End-Data-Science-Project', mlflow=True)
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
-
             # mlflow
 
             with mlflow.start_run():
