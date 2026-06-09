@@ -280,8 +280,7 @@ GitHub:
 https://github.com/Nabanit31
 
 LinkedIn:
-(Add your LinkedIn profile link)
-
+[(https://www.linkedin.com/in/nabanitroy/)]
 ---
 
 # ⭐ If You Like This Project
